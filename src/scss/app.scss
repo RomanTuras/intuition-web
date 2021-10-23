@@ -1,0 +1,35 @@
+//Main App styles
+
+@import "fonts";
+@import "colors";
+
+body {
+  font-family: $montserrat-alternate;
+  font-weight: 400;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  min-width: 320px;
+  position: relative;
+  overflow-x: hidden;
+  line-height: $line-height;
+  font-size: $font-size;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  :visited {
+    text-decoration: none !important;
+  }
+  :focus-visible {
+    outline: none;
+  }
+}
+
+input, textarea {
+  outline: none;
+}

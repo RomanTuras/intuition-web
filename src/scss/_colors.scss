@@ -1,0 +1,24 @@
+//Colors for App
+
+//Light mode colors
+:root {
+  /* Variables for default theme (light-mode) */
+  --background-color: #D3D6DB;
+  --text-color: #35458D;
+  --card-color: #F8FAF9;
+}
+
+//Dark mode colors
+[data-theme="darkMode"] {
+  /* Variables for dark mode */
+  --background-color: #35458D;
+  --text-color: #F8FAF9;
+  --card-color: #242C56;
+}
+
+$accentPurple: #B834DF;
+$accentGreen: #0BD99B;
+$accentBlue: #40C4FF;
+$accentOrange: #FD6F41;
+$accentAmber: #FFC600;
+$gray: #B1B3B7;
