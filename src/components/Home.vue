@@ -1,10 +1,10 @@
 <template>
   <div>
     <button  @click="toggleTheme" aria-label="Toggle themes">
-      <span v-if="this.theme === 'darkMode'"> Light</span>
+      <span v-if="this.theme === 'darkMode'">Light</span>
       <span v-else> Dark</span>
     </button>
-    <h1>Home component</h1>
+    <h1 class="text-center">Home component</h1>
     <router-link :to="{
       name: 'about'
     }">
@@ -35,5 +35,4 @@ export default {
 </script>
 
 <style lang="scss">
-@import "src/scss/app";
 </style>
