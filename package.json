@@ -6,6 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
+    "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/locales/**/*.json\"",
     "watch": "vue-cli-service build --watch"
   },
   "dependencies": {
@@ -15,6 +16,7 @@
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vue": "^2.6.11",
+    "vue-i18n": "^8.26.3",
     "vue-router": "^3.5.2"
   },
   "devDependencies": {
@@ -26,6 +28,7 @@
     "eslint-plugin-vue": "^6.2.2",
     "sass": "^1.43.3",
     "sass-loader": "^10.2.0",
+    "vue-cli-plugin-i18n": "~2.3.1",
     "vue-cli-plugin-tailwind": "~2.0.6",
     "vue-template-compiler": "^2.6.11"
   },
