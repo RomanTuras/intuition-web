@@ -1,0 +1,42 @@
+//Navigation Bar
+
+@import "colors";
+
+nav {
+  #nav-title {
+    color: var(--nav-title-color);
+  }
+  #eye {
+    color: $accentBlue;
+    width: 35px;
+    height: 35px;
+  }
+  #arrow-back {
+    color: var(--text-color);
+    width: 35px;
+    height: 35px;
+    border-radius: 17px;
+    transition: all .3s ease-in-out;
+  }
+  #arrow-back:hover {
+    background-color: var(--nav-btn-hover);
+  }
+  #gear {
+    color: var(--text-color);
+    width: 35px;
+    height: 35px;
+    border-radius: 17px;
+    transition: all .3s ease-in-out;
+    svg {
+      width: 22px;
+      height: 22px;
+      margin: auto;
+    }
+  }
+  #gear:hover {
+    background-color: var(--nav-btn-hover);
+  }
+  .nav-section {
+    width: 800px;
+  }
+}

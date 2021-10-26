@@ -16,6 +16,11 @@ const router = new VueRouter({
       path: "/about",
       name: "about",
       component: () => import("./components/About")
+    },
+    {
+      path: "/settings",
+      name: "settings",
+      component: () => import("./components/Settings")
     }
   ]
 })

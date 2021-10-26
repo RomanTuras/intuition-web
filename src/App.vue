@@ -8,12 +8,8 @@
 
 <script>
 
-import Home from "./components/Home";
 export default {
   name: 'App',
-  comments: {
-    Home
-  }
 }
 </script>
 

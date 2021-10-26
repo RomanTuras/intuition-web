@@ -1,5 +1,6 @@
 <template>
   <div>
+    <nav-bar @onSettings="getSettingsPage"  :title="$t('appTitle')"/>
     <button  @click="toggleTheme" aria-label="Toggle themes">
       <span v-if="this.theme === 'darkMode'">Light</span>
       <span v-else> Dark</span>
@@ -28,8 +29,12 @@
 </template>
 
 <script>
+import NavBar from "./NavBar";
 export default {
   name: "home",
+  components: {
+    NavBar
+  },
   data: () => ({
     theme: '',
     locales: process.env.VUE_APP_I18N_SUPPORTED_LOCALE.split(',')
@@ -39,6 +44,10 @@ export default {
     document.documentElement.setAttribute('data-theme', localTheme); // updates the data-theme attribute
   },
   methods: {
+    getSettingsPage() {
+      this.$router.push('/settings');
+      console.log('Go to the settings!')
+    },
     toggleTheme() {
       this.theme = this.theme === 'darkMode' ? '' : 'darkMode';
       document.documentElement.setAttribute('data-theme', this.theme);

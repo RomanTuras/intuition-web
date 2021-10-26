@@ -1,14 +1,14 @@
 <template>
-  <div>
-    <nav-bar @onBack="onBack"  :title="$t('homeHelpTitle')" :is-home=false />
-    <h1>About component</h1>
-  </div>
+  <section>
+    <nav-bar @onBack="onBack"  :title="$t('settingsTitle')" :is-home=false />
+    <h1>Settings page</h1>
+  </section>
 </template>
 
 <script>
 import NavBar from "./NavBar";
 export default {
-  name: "about",
+  name: "Settings",
   components: {
     NavBar
   },
