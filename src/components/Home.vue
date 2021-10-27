@@ -7,7 +7,7 @@
       <router-link :to="{ name: 'about' }">
         <div class="card w-100 sm:mx-4 md:m-0 shadow-md rounded-xl cursor-pointer" :title="$t('homeHelpTitle')">
           <div class="card-title text-center">
-            <h2>{{ $t('homeHelpTitle') }}</h2>
+            <h2 id="about-title">{{ $t('homeHelpTitle') }}</h2>
             <p>{{ $t('homeHelpSubtitle') }}</p>
           </div>
           <div>
@@ -24,17 +24,11 @@
         <router-link :to="{ name: 'about' }">
           <div class="card w-100 sm:mx-4 md:m-0 shadow-md rounded-xl cursor-pointer" :title="$t('homeHelpTitle')">
             <div class="flex justify-between w-100">
-              <div class="indicator flex">
-                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18 9.5C18 14.1944 14.1944 18 9.5 18C4.80558 18 1 14.1944 1 9.5C1 4.80558 4.80558 1 9.5 1C14.1944 1 18 4.80558 18 9.5Z" stroke="#B1B3B7" stroke-width="2"/>
-                  <path d="M14 9.5C14 11.9853 11.9853 14 9.5 14C7.01472 14 5 11.9853 5 9.5C5 7.01472 7.01472 5 9.5 5C11.9853 5 14 7.01472 14 9.5Z" fill="#B1B3B7"/>
-                </svg>
-                <span class="indicator-label flex ml-1">never</span>
-              </div>
+              <exercise-indicator :date="date"/>
               <exercise-icon element="air_element" />
             </div>
 
-            <h2>{{ $t('homeHelpTitle') }}</h2>
+            <h2 class="text-center">{{ $t('one_from_two') }}</h2>
 
             <div>
               <div>
@@ -57,9 +51,11 @@
 <script>
 import NavBar from "./NavBar";
 import ExerciseIcon from "./home/ExerciseIcon";
+import ExerciseIndicator from "./home/ExerciseIndicator";
 export default {
   name: "home",
   components: {
+    ExerciseIndicator,
     ExerciseIcon,
     NavBar
   },
@@ -86,7 +82,8 @@ export default {
         level: 'hard',
         data: null,
       },
-    }
+    },
+    date: null, //'Wed Oct 27 2021 21:24:10 GMT+0300 (Eastern European Summer Time)',
   }),
   mounted() {
     let localTheme = localStorage.getItem('theme'); //gets stored theme value if any
