@@ -1,0 +1,23 @@
+//Home page styles
+
+@import "colors";
+
+.card {
+  background-color: var(--card-color);
+  padding: 10px;
+}
+
+#down-arrow {
+  color: $accentPurple;
+}
+
+.exercise-icon {
+  width: 60px;
+  height: 60px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  display: flex;
+  svg {
+    fill: var(--card-color);
+  }
+}

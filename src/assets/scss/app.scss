@@ -3,6 +3,7 @@
 @import "fonts";
 @import "colors";
 @import "navBar";
+@import "home-page";
 
 body {
   font-family: $montserrat-alternate;
@@ -20,7 +21,13 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1 {
-  font-size: 2.25rem !important;
+  color: var(--nav-title-color);
+  font-size: 2rem !important;
+}
+
+h2 {
+  color: $accentPurple;
+  font-size: 1.5rem !important;
 }
 
 //@layer base {

@@ -1,6 +1,6 @@
 <template>
   <nav class="shadow-md p-3">
-    <section class="m-auto nav-section flex items-center justify-between flex-wrap ">
+    <section class="m-auto nav-section flex items-center justify-between flex-wrap md:max-w-lg lg:max-w-xl xl:max-w-2xl">
 <!--      Logo Icon, for Home page only-->
       <div v-if="isHome" class="flex float-left">
         <svg id="eye" class="fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -9,13 +9,14 @@
       </div>
 <!--      Back icon, for all pages, except Home-->
       <div id="arrow-back" v-else class="flex float-left" v-on:click="$emit('onBack')" :title="$t('goBack')">
-        <svg  class="fill-current cursor-pointer" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <svg class="fill-current cursor-pointer" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path d="M20.0156 11.0156V12.9844H7.82812L13.4062 18.6094L12 20.0156L3.98438 12L12 3.98438L13.4062 5.39062L7.82812 11.0156H20.0156Z"/>
         </svg>
       </div>
 <!--      Title-->
-      <div id="nav-title" class="flex items-center">
-        <span class="text-3xl">{{ title }}</span>
+      <div id="nav-title" class="text-center">
+        <h1 style="line-height: 1;">{{ title }}</h1>
+        <p style="font-weight: 100; line-height: 1.5;">{{ subtitle }}</p>
       </div>
 <!--        Settings Icon, for Home page only-->
       <div v-if="isHome" id="gear" class="flex float-right cursor-pointer" v-on:click="$emit('onSettings')" :title="$t('settingsTitle')">
@@ -36,6 +37,10 @@ export default {
     title: {
       type: String,
       required: true
+    },
+    subtitle: {
+      type: String,
+      required: false
     },
     isHome: {
       type: Boolean,
