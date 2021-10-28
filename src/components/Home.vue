@@ -10,13 +10,13 @@
             <h2 id="about-title">{{ $t('homeHelpTitle') }}</h2>
             <p>{{ $t('homeHelpSubtitle') }}</p>
           </div>
+
           <div>
-            <div>
-              <svg id="down-arrow" class="fill-current mx-auto my-4" width="12" height="6" viewBox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 6L11.1962 0H0.803848L6 6Z" />
-              </svg>
-            </div>
+            <svg id="down-arrow" class="fill-current mx-auto my-4" width="12" height="6" viewBox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 6L11.1962 0H0.803848L6 6Z" />
+            </svg>
           </div>
+
         </div>
       </router-link>
 
@@ -31,19 +31,23 @@
             <h2 class="text-center">{{ $t(exercise.title) }}</h2>
             <div class="line border-solid border-t-2 w-32 h-1 mx-auto my-3"></div>
 
-            <div>
-              <div>
-                <svg id="down-arrow" class="fill-current mx-auto my-4" width="12" height="6" viewBox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
+            <div class="flex justify-between w-100">
+              <exercise-level :level="exercise.level"/>
+
+              <div class="relative">
+                <svg id="down-arrow" class="fill-current mx-auto my-4 absolute bottom-0" width="12" height="6" viewBox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6 6L11.1962 0H0.803848L6 6Z" />
                 </svg>
               </div>
+
+              <div><span>35%</span></div>
             </div>
+
           </div>
         </router-link>
       </div>
 
     </div>
-
 
 
   </div>
@@ -53,9 +57,11 @@
 import NavBar from "./NavBar";
 import ExerciseIcon from "./home/ExerciseIcon";
 import ExerciseIndicator from "./home/ExerciseIndicator";
+import ExerciseLevel from "./home/ExerciseLevel";
 export default {
   name: "home",
   components: {
+    ExerciseLevel,
     ExerciseIndicator,
     ExerciseIcon,
     NavBar
