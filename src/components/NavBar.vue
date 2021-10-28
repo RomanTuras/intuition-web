@@ -1,5 +1,5 @@
 <template>
-  <nav class="shadow-md p-3">
+  <nav class="shadow-md p-3 sticky top-0 z-50">
     <section class="m-auto nav-section flex items-center justify-between flex-wrap md:max-w-lg lg:max-w-xl xl:max-w-2xl">
 <!--      Logo Icon, for Home page only-->
       <div v-if="isHome" class="flex float-left">

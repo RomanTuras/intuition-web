@@ -3,6 +3,7 @@
 @import "colors";
 
 nav {
+  background-color: var(--background-color);
   #eye {
     color: $accentBlue;
     width: 45px;

@@ -20,15 +20,16 @@
         </div>
       </router-link>
 
-      <div class="mt-3">
-        <router-link :to="{ name: 'about' }">
-          <div class="card w-100 sm:mx-4 md:m-0 shadow-md rounded-xl cursor-pointer" :title="$t('homeHelpTitle')">
+      <div class="mt-3" v-for="exercise in exercises" v-bind:key="exercise.title">
+        <router-link :to="{ name: exercise.title }">
+          <div class="card w-100 sm:mx-4 md:m-0 shadow-md rounded-xl cursor-pointer" :title="$t(exercise.title)">
             <div class="flex justify-between w-100">
               <exercise-indicator :date="date"/>
-              <exercise-icon element="air_element" />
+              <exercise-icon :element="exercise.icon" />
             </div>
 
-            <h2 class="text-center">{{ $t('one_from_two') }}</h2>
+            <h2 class="text-center">{{ $t(exercise.title) }}</h2>
+            <div class="line border-solid border-t-2 w-32 h-1 mx-auto my-3"></div>
 
             <div>
               <div>
@@ -60,29 +61,29 @@ export default {
     NavBar
   },
   data: () => ({
-    exercises: {
-      four_from_nine: {
+    exercises: [
+      {
         title: 'four_from_nine',
         icon: 'air_element',
         skill: 0,
         level: 'easy',
         data: null,
       },
-      one_from_four: {
+      {
         title: 'one_from_four',
         icon: 'earth_element',
         skill: 0,
         level: 'middle',
         data: null,
       },
-      two_from_eight: {
+      {
         title: 'two_from_eight',
         icon: 'fire_element',
         skill: 0,
         level: 'hard',
         data: null,
       },
-    },
+    ],
     date: null, //'Wed Oct 27 2021 21:24:10 GMT+0300 (Eastern European Summer Time)',
   }),
   mounted() {
