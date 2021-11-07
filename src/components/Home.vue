@@ -5,7 +5,7 @@
     <div class="column ml-auto mr-auto mt-4 mb-4 flex-wrap md:max-w-lg lg:max-w-xl xl:max-w-2xl">
 
       <router-link :to="{ name: 'about' }">
-        <div class="card w-100 sm:mx-4 md:m-0 shadow-md rounded-xl cursor-pointer" :title="$t('homeHelpTitle')">
+        <div class="card w-100 mx-2 sm:mx-4 md:m-0 shadow-md rounded-xl cursor-pointer" :title="$t('homeHelpTitle')">
           <div class="card-title text-center">
             <h2 id="about-title">{{ $t('homeHelpTitle') }}</h2>
             <p>{{ $t('homeHelpSubtitle') }}</p>
@@ -22,14 +22,16 @@
 
       <div class="mt-3" v-for="exercise in exercises" v-bind:key="exercise.title">
         <router-link :to="{ name: exercise.title }">
-          <div class="card w-100 sm:mx-4 md:m-0 shadow-md rounded-xl cursor-pointer" :title="$t(exercise.title)">
+          <div class="card w-100 mx-2 sm:mx-4 md:m-0 shadow-md rounded-xl cursor-pointer" :title="$t(exercise.title)">
             <div class="flex justify-between w-100">
               <exercise-indicator :date="date"/>
               <exercise-icon :element="exercise.icon" />
             </div>
 
+
+            <p class="text-center" style="font-weight: 100">{{ $t('exerciseSubTitle') }}</p>
             <h2 class="text-center">{{ $t(exercise.title) }}</h2>
-            <div class="line border-solid border-t-2 w-32 h-1 mx-auto my-3"></div>
+<!--            <div class="line border-solid border-t-2 w-32 h-1 mx-auto my-3"></div>-->
 
             <div class="flex justify-between w-100">
               <exercise-level :level="exercise.level"/>
@@ -40,7 +42,7 @@
                 </svg>
               </div>
 
-              <div><span>35%</span></div>
+              <exercise-skill :value="exercise.skill" />
             </div>
 
           </div>
@@ -58,9 +60,11 @@ import NavBar from "./NavBar";
 import ExerciseIcon from "./home/ExerciseIcon";
 import ExerciseIndicator from "./home/ExerciseIndicator";
 import ExerciseLevel from "./home/ExerciseLevel";
+import ExerciseSkill from "./home/ExerciseSkill";
 export default {
   name: "home",
   components: {
+    ExerciseSkill,
     ExerciseLevel,
     ExerciseIndicator,
     ExerciseIcon,
@@ -78,14 +82,14 @@ export default {
       {
         title: 'one_from_four',
         icon: 'earth_element',
-        skill: 0,
+        skill: 35,
         level: 'middle',
         data: null,
       },
       {
         title: 'two_from_eight',
         icon: 'fire_element',
-        skill: 0,
+        skill: 55,
         level: 'hard',
         data: null,
       },
