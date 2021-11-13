@@ -7,7 +7,7 @@
       <router-link :to="{ name: 'about' }">
         <div class="card w-100 mx-2 sm:mx-4 md:m-0 shadow-md rounded-xl cursor-pointer" :title="$t('homeHelpTitle')">
           <div class="card-title text-center">
-            <h2 id="about-title">{{ $t('homeHelpTitle') }}</h2>
+            <h2 class="about-title">{{ $t('homeHelpTitle') }}</h2>
             <p>{{ $t('homeHelpSubtitle') }}</p>
           </div>
 
