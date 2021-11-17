@@ -23,7 +23,11 @@
   "settingsAdsOff": "Отключить рекламу",
   "settingsTitle": "Настройки",
   "settingsLanguage": "Язык",
-  "settingsLanguageName": "Русский",
+  "languageName": {
+    "en": "English",
+    "pl": "Polski",
+    "ru": "Русский"
+  },
   "settingsSelectLanguage": "Выберите язык",
   "settingsSelectedTheme": "Тема",
   "settings_import": "Импорт статистики",

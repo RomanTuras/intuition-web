@@ -23,7 +23,11 @@
   "settingsAdsOff": "Turn off Advertising",
   "settingsTitle": "Settings",
   "settingsLanguage": "Language",
-  "settingsLanguageName": "English",
+  "languageName": {
+    "en": "English",
+    "pl": "Polski",
+    "ru": "Русский"
+  },
   "settingsSelectLanguage": "Choose language",
   "settingsSelectedTheme": "Theme",
   "settings_import": "Import Statistics",

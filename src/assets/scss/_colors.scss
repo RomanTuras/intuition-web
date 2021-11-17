@@ -9,10 +9,11 @@
   --nav-title-color: #35458D;
   --link-color: #B834DF;
   --nav-btn-hover: #B1B3B7;
+  --modal-color: #35458D;
 }
 
 //Dark mode colors
-[data-theme="darkMode"] {
+[data-theme="dark"] {
   /* Variables for dark mode */
   --background-color: #35458D;
   --text-color: #F8FAF9;
@@ -20,6 +21,7 @@
   --nav-title-color: #0BD99B;
   --link-color: #0BD99B;
   --nav-btn-hover: #5565aD;
+  --modal-color: #35458D;
 }
 
 $accentPurple: #B834DF;
@@ -28,3 +30,4 @@ $accentBlue: #40C4FF;
 $accentOrange: #FD6F41;
 $accentAmber: #FFC600;
 $gray: #B1B3B7;
+$white: #F8FAF9;
