@@ -28,10 +28,9 @@
               <exercise-icon :element="exercise.icon" />
             </div>
 
-
-            <p class="text-center" style="font-weight: 100">{{ $t('exerciseSubTitle') }}</p>
+<!--            <p class="text-center" style="font-weight: 100">{{ $t('exerciseSubTitle') }}</p>-->
             <h2 class="text-center">{{ $t(exercise.title) }}</h2>
-<!--            <div class="line border-solid border-t-2 w-32 h-1 mx-auto my-3"></div>-->
+            <p class="line w-32 mx-auto mb-3 border-b-2 h-4"></p>
 
             <div class="flex justify-between w-100">
               <exercise-level :level="exercise.level"/>

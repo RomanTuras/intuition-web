@@ -35,9 +35,12 @@
 <script>
 export default {
   name: "SoundIcon",
-  data: () => ({
-    soundOn: true,
-  })
+  props: {
+    soundOn: {
+      type: Boolean,
+      default: true
+    }
+  }
 }
 </script>
 

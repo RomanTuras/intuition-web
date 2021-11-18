@@ -35,8 +35,10 @@
   "themeDark": "Ciemna",
   "themeLight": "Światła",
   "settingsVibration": "Wibracje",
-  "settingsStatusOn": "Włącz.",
-  "settingsStatusOff": "Wyłącz.",
+  "mediaStatus": {
+    "on": "Włącz.",
+    "off": "Wyłącz."
+  },
   "settingsSounds": "Dźwięk",
   "settingsExercisesSkins": "Temat ćwiczen",
   "settingsExercisesSelectSkins": "Wybierz temat",

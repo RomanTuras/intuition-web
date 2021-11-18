@@ -76,7 +76,7 @@ a {
 .link-wrapper {
   position: relative;
   display: block;
-  padding: 20px 0;
+  padding: 18px 0;
 }
 
 .hover-a {
@@ -107,4 +107,11 @@ input, textarea {
 
 .about-title {
   color: $accentPurple;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .3s ease-in;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }

@@ -35,8 +35,10 @@
   "themeDark": "Dark",
   "themeLight": "Light",
   "settingsVibration": "Vibration",
-  "settingsStatusOn": "On",
-  "settingsStatusOff": "Off",
+  "mediaStatus": {
+    "on": "On",
+    "off": "Off"
+  },
   "settingsSounds": "Sounds",
   "settingsExercisesSkins": "Exercises Skins",
   "settingsExercisesSelectSkins": "Select Skin",

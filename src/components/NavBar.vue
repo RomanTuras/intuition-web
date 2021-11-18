@@ -2,7 +2,7 @@
   <nav class="shadow-md p-3 sticky top-0 z-50">
     <section class="m-auto nav-section flex items-center justify-between flex-wrap md:max-w-lg lg:max-w-xl xl:max-w-2xl">
 <!--      Logo Icon, for Home page only-->
-      <div v-if="isHome" class="flex float-left">
+      <div v-if="isHome" class="flex float-left hidden-on-small">
         <svg id="eye" class="xs:invisible fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
           <title>{{ $t('appTitle') }}</title>
           <path d="M16,25.47c-7.53,0-13.41-8.54-13.66-8.91L2,16l.38-.56C2.59,15.07,8.47,6.53,16,6.53s13.41,8.54,13.66,8.91L30,16l-.38.56C29.41,16.93,23.53,25.47,16,25.47ZM4.41,16C5.8,17.82,10.55,23.47,16,23.47S26.2,17.83,27.59,16C26.2,14.18,21.45,8.53,16,8.53S5.8,14.17,4.41,16Z"/><path class="cls-1" d="M16,11a4.14,4.14,0,0,0-.48,0,.34.34,0,0,0-.31.33.34.34,0,0,0,.1.24h0a2.59,2.59,0,0,1,.74,1.8A2.63,2.63,0,0,1,13.42,16a2.58,2.58,0,0,1-1.78-.72h0a.35.35,0,0,0-.6.18A4.13,4.13,0,0,0,11,16a5,5,0,1,0,5-5Z"/></svg>
@@ -14,9 +14,9 @@
         </svg>
       </div>
 <!--      Title-->
-      <div id="nav-title" class="text-center">
+      <div id="nav-title" class="text-center cursor-default">
         <h1 style="line-height: 1;">{{ title }}</h1>
-        <p style="font-weight: 400; line-height: 1.5; font-size: 14px">{{ subtitle }}</p>
+<!--        <p style="font-weight: 400; line-height: 1.5; font-size: 14px">{{ subtitle }}</p>-->
       </div>
 <!--        Settings Icon, for Home page only-->
       <div v-if="isHome" id="gear" class="flex float-right cursor-pointer" v-on:click="$emit('onSettings')" :title="$t('settingsTitle')">
@@ -49,3 +49,11 @@ export default {
   }
 }
 </script>
+
+<style scoped lang="scss">
+@media (max-width: 320px) {
+  .hidden-on-small {
+    display: none;
+  }
+}
+</style>
