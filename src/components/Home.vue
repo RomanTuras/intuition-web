@@ -30,18 +30,24 @@
 
 <!--            <p class="text-center" style="font-weight: 100">{{ $t('exerciseSubTitle') }}</p>-->
             <h2 class="text-center">{{ $t(exercise.title) }}</h2>
-            <p class="line w-32 mx-auto mb-3 border-b-2 h-4"></p>
+            <p class="line w-32 mx-auto mb-0 border-b-2 h-1"></p>
 
             <div class="flex justify-between w-100">
               <exercise-level :level="exercise.level"/>
 
-              <div class="relative">
-                <svg id="down-arrow" class="fill-current mx-auto my-4 absolute bottom-0" width="12" height="6" viewBox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6 6L11.1962 0H0.803848L6 6Z" />
-                </svg>
-              </div>
+<!--              <div class="relative">-->
+<!--                <svg id="down-arrow" class="fill-current mx-auto my-4 absolute bottom-0" width="12" height="6" viewBox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">-->
+<!--                  <path d="M6 6L11.1962 0H0.803848L6 6Z" />-->
+<!--                </svg>-->
+<!--              </div>-->
 
               <exercise-skill :value="exercise.skill" />
+            </div>
+
+            <div>
+              <svg id="down-arrow" class="fill-current mx-auto my-0" width="12" height="6" viewBox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 6L11.1962 0H0.803848L6 6Z" />
+              </svg>
             </div>
 
           </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="exercise-level ml-3 text-center">
+  <div class="exercise-level text-center">
 
     <svg v-if="level==='easy'" id="easy" height="512" viewBox="0 0 512 512" width="512" class="level-icon fill-current m-auto" xmlns="http://www.w3.org/2000/svg">
       <g><path d="m241 129.827v-94.673c-57.822 3.319-112.046 25.788-155.327 64.361l66.936 66.936c25.19-20.97 55.777-33.644 88.391-36.624z" fill="#0BD99B"/>

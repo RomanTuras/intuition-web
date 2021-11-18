@@ -1,5 +1,5 @@
 <template>
-  <div class="mr-3 text-center" >
+  <div class="text-center" >
     <span class="text-4xl font-light accent">{{ value }}</span>
     <span class="text-lg accent">%</span>
     <span class="block text-color">{{ $t('homeSkill') }}</span>
