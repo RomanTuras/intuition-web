@@ -78,21 +78,21 @@ export default {
   data: () => ({
     exercises: [
       {
-        title: 'four_from_nine',
+        title: 'one_from_two',
         icon: 'air_element',
         skill: 0,
         level: 'easy',
         data: null,
       },
       {
-        title: 'one_from_four',
+        title: 'four_from_nine',
         icon: 'earth_element',
         skill: 35,
         level: 'middle',
         data: null,
       },
       {
-        title: 'two_from_eight',
+        title: 'one_from_four',
         icon: 'fire_element',
         skill: 55,
         level: 'hard',
@@ -102,7 +102,7 @@ export default {
     date: null, //'Wed Oct 27 2021 21:24:10 GMT+0300 (Eastern European Summer Time)',
   }),
   mounted() {
-    let localTheme = localStorage.getItem('theme'); //gets stored theme value if any
+    let localTheme = localStorage.getItem('theme') ?? 'dark'; //gets stored theme value if any
     document.documentElement.setAttribute('data-theme', localTheme); // updates the data-theme attribute
   },
   methods: {

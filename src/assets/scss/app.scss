@@ -6,6 +6,7 @@
 @import "home-page";
 @import "settings";
 @import "modal";
+@import "one-in-two";
 
 body {
   font-family: $montserrat-alternate !important;
@@ -15,6 +16,7 @@ body {
   min-width: 320px;
   position: relative;
   overflow-x: hidden;
+  user-select: none;
 }
 
 h3, h4, h5, h6 {
@@ -43,15 +45,6 @@ p {
 span {
   color: var(--text-color);
 }
-
-//@layer base {
-//  p {
-//    @apply text-4xl;
-//  }
-//  h1 {
-//    @apply text-5xl;
-//  }
-//}
 
 a {
   color: var(--link-color) !important;
@@ -101,8 +94,13 @@ a {
   }
 }
 
-input, textarea {
+.accent-color {
+  color: var(--accent-color);
+}
+
+input, textarea, button, select, a, svg {
   outline: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 .about-title {
@@ -114,4 +112,16 @@ input, textarea {
 }
 .fade-enter, .fade-leave-to {
   opacity: 0;
+}
+
+.svg-accent-light {
+  filter: invert(66%) sepia(29%) saturate(3831%) hue-rotate(176deg) brightness(105%) contrast(109%);
+}
+
+.svg-default-color {
+  filter: invert(64%) sepia(79%) saturate(7492%) hue-rotate(269deg) brightness(88%) contrast(100%);
+}
+
+.svg-accent-dark {
+  filter: invert(1);
 }

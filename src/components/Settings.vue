@@ -170,6 +170,9 @@ export default {
     this.isDarkTheme = this.theme === 'dark';
     this.skin = localStorage.getItem('skin') ?? 'animals';
     this.soundStatus = localStorage.getItem('soundStatus') ?? 'on';
+    this.isSoundOn = this.soundStatus === 'on';
+    this.vibrationStatus = localStorage.getItem('vibrationStatus') ?? 'on';
+    this.isVibrationOn = this.vibrationStatus === 'on';
   },
   methods: {
     closeLocal() {
