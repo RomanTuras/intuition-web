@@ -26,7 +26,8 @@
   "languageName": {
     "en": "English",
     "pl": "Polski",
-    "ru": "Русский"
+    "ru": "Русский",
+    "ua": "Українська"
   },
   "settingsSelectLanguage": "Выберите язык",
   "settingsSelectedTheme": "Тема",

@@ -31,6 +31,11 @@ const router = new VueRouter({
       path: "/one_from_two",
       name: "one_from_two",
       component: () => import("./components/OneInTwo")
+    },
+    {
+      path: "/four_from_nine",
+      name: "four_from_nine",
+      component: () => import("./components/FourFromNine")
     }
   ]
 })

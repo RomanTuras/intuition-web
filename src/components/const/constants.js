@@ -24,5 +24,11 @@ export default {
       'img/skins/vegetables/eggplant.svg',
       'img/skins/vegetables/broccoli.svg'
     ]
+  },
+  targets: {
+    'animals': 'cat',
+    'cards_suits': 'hearts',
+    'fruits': 'apple',
+    'vegetables': 'carrot'
   }
 }

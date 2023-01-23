@@ -26,7 +26,8 @@
   "languageName": {
     "en": "English",
     "pl": "Polski",
-    "ru": "Русский"
+    "ru": "Русский",
+    "ua": "Українська"
   },
   "settingsSelectLanguage": "Choose language",
   "settingsSelectedTheme": "Theme",
@@ -71,7 +72,7 @@
     "11": "Then - it’s very important – try to remember this feeling or association and push the button.",
     "12": "Compare with your result (correct or incorrect).",
     "13": "The main purpose of practice is to hear and distinguish the answers of your intuition.",
-    "14": "Everyday practice during about 10 minutes will help you dramatically boost the effectiveness of your Gut Feeling.",
+    "14": "Everyday practice during about 10 minutes will help you dramatically boost the effectiveness of your Sixth Feeling.",
     "15": "Intuition development – is persistence , practice and belief in yourself!",
     "16": "May the Force of Intuition be with you!",
     "to_home": "Go to the exercises"
@@ -84,7 +85,7 @@
   "correct_answers": "Correct answers:",
   "your_best_result": "The Best Result:",
   "week_skill": "A Week Skill:",
-  "ex_four_of_nine_title": "Listen to your gut feeling - find four ",
+  "ex_four_of_nine_title": "Listen to your sixth feeling - find out ",
   "cat": "cats",
   "hearts": "hearts",
   "apple": "apples",

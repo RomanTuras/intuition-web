@@ -22,3 +22,14 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Deploy on Firebase
+```
+firebase deploy --only hosting
+```
+
+### Working links of the project
+```
+https://intuition-web.web.app/
+https://intuition-web.firebaseapp.com/
+```
